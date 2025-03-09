@@ -15,6 +15,7 @@ file = open(id_file, 'w')
 with open(fasta_file, "r") as f:
     for record in SeqIO.parse(f, "fasta"):
         uniprot_id = record.id.split("|")[1]  # Extract UniProt ID
+        uniprot_nucleotide_dict[uniprot_id] = str(record.seq)
         file.write(str(uniprot_id) + "\n")
 
 
