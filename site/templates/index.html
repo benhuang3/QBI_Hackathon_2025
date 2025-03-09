@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+
+    <h1>Welcome to My Website2</h1>
+    <p>This is a sample HTML page served with Flask.</p>
+
+
+    <form action="/" method="post">
+      <label for="pseq">Protein Sequence:</label>
+      <textarea id="pseq" name="pseq"></textarea><br><br>
+
+      <label for="dstr">Second Input:</label>
+      <textarea id="dstr" name="dstr"></textarea><br><br>
+
+      <button type="submit">Submit</button>
+
+    </form>
+    <h2>Sum: {{ result }}</h2>
+
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+
+  </body>
+</html>

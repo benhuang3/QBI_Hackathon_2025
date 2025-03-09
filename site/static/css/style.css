@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    color: #007bff;
+}
+
+textarea {
+        width: 300px;
+        height: 300px;
+        resize: none; /* Prevents resizing */
+        font-size: 16px;
+        border: 2px solid #333;
+        padding: 10px;
+      }
+#result {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 10px;
+      }
