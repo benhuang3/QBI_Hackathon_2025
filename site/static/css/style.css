@@ -9,16 +9,58 @@ h1 {
     color: #007bff;
 }
 
+
+.form-container {
+            display: table;
+            margin-left: 250px;
+
+            /* Center the form */
+            border-collapse: collapse;
+        }
+
 textarea {
-        width: 300px;
-        height: 300px;
-        resize: none; /* Prevents resizing */
-        font-size: 16px;
-        border: 2px solid #333;
-        padding: 10px;
-      }
-#result {
-        font-size: 18px;
-        font-weight: bold;
-        margin-top: 10px;
-      }
+            display: table-cell;
+            width: 400px;  /* Larger width */
+            height: 200px; /* Increased height */
+            font-size: 18px; /* Bigger font size */
+            padding: 10px;
+            border: 2px solid #333;
+            overflow: auto; /* Enables both horizontal and vertical scrolling */
+            white-space: nowrap; /* Prevents word wrapping */
+            vertical-align: top; /* Ensures text starts at the top */
+            text-align: left;
+            resize: none;
+        }
+
+
+.header-container {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    margin-top: 20px; /* Adds space above the button */
+    margin-bottom: 30px; /* Adds space above the button */
+
+
+}
+
+ .button-container {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    margin-top: 10px; /* Adds space above the button */
+}
+
+
+button {
+    padding: 20px 40px; /* Increase padding for a bigger button */
+    font-size: 24px; /* Increase font size */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 250px; /* Increase button width */
+    font-weight: bold;
+}
+form  { display: table;      }
+p     { display: table-row;  }
+label { display: table-cell; }
+input { display: table-cell; }

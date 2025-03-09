@@ -8,19 +8,29 @@
   <body>
 
     <h1>Welcome to My Website2</h1>
-    <p>This is a sample HTML page served with Flask.</p>
 
+    <div class="header-container">
+      This is a sample HTML page served with Flask.
+    </div>
 
-    <form action="/" method="post">
-      <label for="pseq">Protein Sequence:</label>
-      <textarea id="pseq" name="pseq"></textarea><br><br>
+    <form action="/" method="post" class="form-container" id="a-form">
+      <p>
+        <label for="pseq">Protein Sequence: </label>
+        <textarea id="pseq" name="pseq"></textarea><br><br>
+      </p>
+      <p>
+        <label for="dstr">Drug SMILES String: &nbsp; </label>
+        <textarea id="dstr" name="dstr"></textarea><br><br>
+      </p>
 
-      <label for="dstr">Second Input:</label>
-      <textarea id="dstr" name="dstr"></textarea><br><br>
-
-      <button type="submit">Submit</button>
 
     </form>
+
+    <div class="button-container">
+        <button type="submit" form="a-form">Submit</button>
+      </div>
+
+
     <h2>Sum: {{ result }}</h2>
 
 
