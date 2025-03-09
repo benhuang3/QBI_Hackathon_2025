@@ -2,8 +2,8 @@ from Bio import SeqIO
 import gzip
 
 # Path to the UniProt nucleotide FASTA file
-fasta_file = "uniprot_sprot_varsplic.fasta"
-id_file = "uniprot_ids.txt"
+fasta_file = "data/uniprot_sprot_varsplic.fasta"
+id_file = "data/uniprot_ids.txt"
 
 # Dictionary to store UniProt ID → Nucleotide Sequence mapping
 uniprot_nucleotide_dict = {}
