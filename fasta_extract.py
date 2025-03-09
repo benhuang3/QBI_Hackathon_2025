@@ -39,5 +39,7 @@ for record in SeqIO.parse("data/sequence3.fasta", "fasta"):
 
 combined_dict = {key: str(ref_nuc_dict[value]) for key, value in uni_ref_dict.items() if value in ref_nuc_dict}
 
+
+
 df = pd.DataFrame(list(combined_dict.items()), columns=['Key', 'Value'])
 print(df)

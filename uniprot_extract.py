@@ -21,4 +21,4 @@ with open(fasta_file, "r") as f:
 
 # Print first few entries
 for k, v in list(uniprot_nucleotide_dict.items())[:5]:
-    print(f"UniProt ID: {k}\nNucleotide Sequence: {v[:50]}...\n")
+    print(f"UniProt ID: {k}\nAA Sequence: {v[:50]}...\n")

@@ -6,12 +6,12 @@ data = df.values  # Convert to a NumPy array
 print(data)
 k = 0
 
-refseq_id_file = "refseq_test.txt"
+refseq_id_file = "data/refseq_test.txt"
 
-file0 = open("refseq_test0.txt", 'w')
-file1 = open("refseq_test1.txt", 'w')
-file2 = open("refseq_test2.txt", 'w')
-file3 = open("refseq_test3.txt", 'w')
+file0 = open("data/refseq_test0.txt", 'w')
+file1 = open("data/refseq_test1.txt", 'w')
+file2 = open("data/refseq_test2.txt", 'w')
+file3 = open("data/refseq_test3.txt", 'w')
 
 
 for i,j in data:
